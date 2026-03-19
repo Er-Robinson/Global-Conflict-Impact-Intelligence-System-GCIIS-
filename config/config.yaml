@@ -1,0 +1,8 @@
+data_paths:
+  raw_news: data/raw/news
+  raw_conflict: data/raw/conflict
+  raw_economic: data/raw/economic
+
+api:
+  news_query: "war OR conflict OR military"
+  max_records: 100

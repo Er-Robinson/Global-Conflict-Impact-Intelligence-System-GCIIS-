@@ -1,0 +1,13 @@
+pandas
+numpy
+requests
+python-dotenv
+schedule
+praw
+transformers
+scikit-learn
+geopandas
+streamlit
+fastapi
+uvicorn
+pyspark
