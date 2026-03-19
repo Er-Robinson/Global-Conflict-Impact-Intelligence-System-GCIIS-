@@ -10,4 +10,7 @@ geopandas
 streamlit
 fastapi
 uvicorn
-pyspark
+Python 3.10
+pyspark 3.5.1
+Kafka connector 3.5.1
+Hadoop winutils

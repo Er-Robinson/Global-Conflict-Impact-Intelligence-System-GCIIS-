@@ -2,11 +2,16 @@ from kafka import KafkaProducer
 import json
 
 producer = KafkaProducer(
-    bootstrap_servers="localhost:9092",
-    value_serializer=lambda v: json.dumps(v).encode("utf-8")
+    bootstrap_servers='localhost:9092',
+    value_serializer=lambda v: json.dumps(v).encode('utf-8')
 )
 
-producer.send("conflict-news", {"message": "test event"})
-producer.flush()
+data = {
+    "title": "War Update",
+    "url": "cnn.com/news",
+    "sourceCountry": "Ukraine",
+    "language": "en"
+}
 
-print("Event sent")
+producer.send("conflict-news", value=data)
+producer.flush()
